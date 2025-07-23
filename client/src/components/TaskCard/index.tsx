@@ -16,7 +16,7 @@
 //           <div className="flex flex-wrap">
 //             {task.attachments && task.attachments.length > 0 && (
 //               <Image
-//                 src={`https://pm-s3-images.s3.us-east-2.amazonaws.com/${task.attachments[0].fileURL}`}
+//                 src={`https://chakra-s3-images.s3.us-east-1.amazonaws.com/${task.attachments[0].fileURL}`}
 //                 alt={task.attachments[0].fileName}
 //                 width={400}
 //                 height={200}
@@ -87,8 +87,7 @@ const TaskCard = ({ task }: Props) => {
           <div className="flex flex-wrap mt-2">
             {!imageError ? (
               <Image
-                // src={`https://pm-s3-images.s3.us-east-2.amazonaws.com/${task.attachments[0].fileURL}`}
-                src={`/${task.attachments[0].fileURL}`}
+                src={`https://chakra-s3-images.s3.us-east-1.amazonaws.com/${task.attachments[0].fileURL}`}
                 alt={task.attachments[0].fileName}
                 width={400}
                 height={200}
@@ -120,8 +119,8 @@ const TaskCard = ({ task }: Props) => {
           {task.description || "No description provided"}
         </p>
         <p>
-//         <strong>Status:</strong> {task.status}
-//       </p>
+       <strong>Status:</strong> {task.status}
+       </p>
         <p>
           <strong>Priority:</strong>
           <span className={`ml-2 px-2 py-1 rounded text-xs ${
