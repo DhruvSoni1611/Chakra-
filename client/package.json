@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.11.2",
+    "@aws-sdk/client-cognito-identity-provider": "^3.848.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.2.0",
@@ -19,6 +20,7 @@
     "@rsagiev/gantt-task-react-19": "^0.3.9",
     "aws-amplify": "^6.15.3",
     "axios": "^1.10.0",
+    "crypto": "^1.0.1",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.0",
     "gantt-task-react": "^0.3.9",
